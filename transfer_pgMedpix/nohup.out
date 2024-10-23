@@ -1,0 +1,108 @@
+/home/adi/anaconda3/lib/python3.12/site-packages/transformers/models/paligemma/configuration_paligemma.py:137: FutureWarning: The `vocab_size` attribute is deprecated and will be removed in v4.44, Please use `text_config.vocab_size` instead.
+  warnings.warn(
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  2.73s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:05<00:02,  2.82s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  2.00s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  2.21s/it]
+Traceback (most recent call last):
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/adishourya/results__fullrun__0210-101525/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 402, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1232, in hf_hub_download
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1295, in _hf_hub_download_to_cache_dir
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1746, in _get_metadata_or_catch_error
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1666, in get_hf_file_metadata
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 364, in _request_wrapper
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 388, in _request_wrapper
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_http.py", line 417, in hf_raise_for_status
+huggingface_hub.errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-66fd350c-5eac7bbf480909e6772ef56e;33f3c79d-6b0b-4c84-bc12-fb3bd76cd066)
+
+Entry Not Found for url: https://huggingface.co/adishourya/results__fullrun__0210-101525/resolve/main/config.json.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/adi/code/um/sem3/res_internship/ours/transfer_pgMedpix/lora_inference.py", line 27, in <module>
+    processor = AutoProcessor.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/models/auto/processing_auto.py", line 292, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 976, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/configuration_utils.py", line 632, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 456, in cached_file
+    raise EnvironmentError(
+OSError: adishourya/results__fullrun__0210-101525 does not appear to have a file named config.json. Checkout 'https://huggingface.co/adishourya/results__fullrun__0210-101525/tree/main' for available files.
+/home/adi/anaconda3/lib/python3.12/site-packages/transformers/models/paligemma/configuration_paligemma.py:137: FutureWarning: The `vocab_size` attribute is deprecated and will be removed in v4.44, Please use `text_config.vocab_size` instead.
+  warnings.warn(
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  2.79s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:04,  4.20s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:11<00:00,  3.82s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:11<00:00,  3.78s/it]
+Traceback (most recent call last):
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/adishourya/results__fullrun__0210-101525/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 402, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1232, in hf_hub_download
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1295, in _hf_hub_download_to_cache_dir
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1746, in _get_metadata_or_catch_error
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 1666, in get_hf_file_metadata
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 364, in _request_wrapper
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/file_download.py", line 388, in _request_wrapper
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/huggingface_hub-0.25.0rc1-py3.8.egg/huggingface_hub/utils/_http.py", line 417, in hf_raise_for_status
+huggingface_hub.errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-66fd3564-27bb2f010c18939c6986d201;6b6c8c78-661b-42a5-b261-b2fbb60357f1)
+
+Entry Not Found for url: https://huggingface.co/adishourya/results__fullrun__0210-101525/resolve/main/config.json.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/adi/code/um/sem3/res_internship/ours/transfer_pgMedpix/lora_inference.py", line 27, in <module>
+    processor = AutoProcessor.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/models/auto/processing_auto.py", line 292, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 976, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/configuration_utils.py", line 632, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/configuration_utils.py", line 689, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/adi/anaconda3/lib/python3.12/site-packages/transformers/utils/hub.py", line 456, in cached_file
+    raise EnvironmentError(
+OSError: adishourya/results__fullrun__0210-101525 does not appear to have a file named config.json. Checkout 'https://huggingface.co/adishourya/results__fullrun__0210-101525/tree/main' for available files.
