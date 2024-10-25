@@ -1,6 +1,7 @@
 *.png
 */RESULTS/*
 *.typ
+clean.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
