@@ -1,0 +1,42 @@
+{
+  "os":  "Linux-6.11.3-arch1-1-x86_64-with-glibc2.40",
+  "python":  "3.12.4",
+  "startedAt":  "2024-10-31T09:54:24.385660Z",
+  "program":  "/home/adi/code/um/MedM/experiments/scratchpad/sample_trainer.py",
+  "codePath":  "experiments/scratchpad/sample_trainer.py",
+  "git":  {
+    "remote":  "https://github.com/adishourya/MedM.git",
+    "commit":  "14bf48ad466c5e1bb346c7570008b8fb13ce2ed4"
+  },
+  "email":  "shourya.aditya10@gmail.com",
+  "root":  "/home/adi/code/um/MedM/experiments/scratchpad",
+  "host":  "adi",
+  "username":  "adi",
+  "executable":  "/home/adi/anaconda3/bin/python",
+  "codePathLocal":  "sample_trainer.py",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "[]",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "49350922240",
+      "used":  "40263692288"
+    }
+  },
+  "memory":  {
+    "total":  "16437534720"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  16
+  },
+  "gpu_nvidia":  [
+    {
+      "memoryTotal":  "8585740288",
+      "cudaCores":  4608,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.6"
+}

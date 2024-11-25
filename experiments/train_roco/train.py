@@ -32,16 +32,26 @@ processor = AutoProcessor.from_pretrained(model_id)
 tokenizer = processor.tokenizer
 
 from datasets import load_dataset
-train_dataset = load_dataset("adishourya/ROCO-QA",split="Vaild")
+train_dataset = load_dataset("adishourya/ROCO-QA",split="Vaild").shuffle(seed=1).select(range(100))
 
-# In [4]: dataset
-# Out[4]:
-# Dataset({
-#     features: ['image_id', 'image', 'question', 'answer'],
-#     num_rows: 8175
-# })
+#  ______________________________________________________________
+# / # In [4]: dataset                                            \
+# | # Out[4]:                                                    |
+# | # Dataset({                                                  |
+# | #     features: ['image_id', 'image', 'question', 'answer'], |
+# | #     num_rows: 8175                                         |
+# \ # })                                                         /
+#  --------------------------------------------------------------
+#         \   ^__^
+#          \  (oo)\_______
+#             (__)\       )\/\
+#                 ||----w |
+#                 ||     ||
 
-class Example():
+class ProcessorExample():
+    """
+    Huggingface preprocessor is for processing the input data mostly for multimodal models
+    """
     def __init__(self,dataset):
         self.dataset = dataset
 
@@ -100,8 +110,10 @@ class Example():
     @staticmethod
     def decode_example(tokens_out:dict):
         print("decoding pixel values")
+        # remember this is normalized so its between -1 and 1 .. so it might not looks exactly like the input
         img_decoded = einops.rearrange(tokens_out["pixel_values"],"1 c h w -> h w c") 
-        plt.imshow(img_decoded)
+        # plotting normalized images
+        plt.imshow(img_decoded,vmin=-1,vmax=1)
         plt.show()
         print("input id")
         print(processor.batch_decode(tokens_out["input_ids"]))
@@ -114,10 +126,11 @@ class Example():
         tokens_out = self.tokenization_example(eg)
         self.decode_example(tokens_out)
 
+def exemplar_processor():
+    eg = ProcessorExample(train_dataset)
+    eg.one_example()
 
-
-
-
+# exemplar_processor()
 
 # create dataset
 class ROCODataset(Dataset):
