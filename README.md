@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=50&pause=1000&width=1435&height=200&lines=Adapting+Lightweight+Multimodal+Language+Models;for+Radiological+Visual+Question+Answering+;A+Practical+Approach)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=50&duration=1500&color=36bccf&center=true&vCenter=true&multiline=true&width=1335&height=400&lines=Adapting+Lightweight+Multimodal+Model;for+Radiological+Visual+Question+Answering;A+Practical+Approach)](https://git.io/typing-svg)
 
 <p align="center">
   <img src="./assets/title.png" alt="Title" width="500" height="500">
