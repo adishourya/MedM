@@ -1,7 +1,7 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=50&pause=1000&width=1435&height=200&lines=Adapting+Lightweight+Multimodal+Language+Models;for+Radiological+Visual+Question+Answering+;A+Practical+Approach)](https://git.io/typing-svg)
 
 <p align="center">
-  <img src="./assets/title.png" alt="Title" width="100" height="100">
+  <img src="./assets/title.png" alt="Title" width="500" height="500">
 </p>
 
 ---
