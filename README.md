@@ -1,5 +1,4 @@
-![title](./assets/title.gif)
-
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=LightWeight+Radiological+VLM)](https://git.io/typing-svg)
 ![title](./assets/mascot.png)
 ## Code Navigation
 ![hippo](https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif)
