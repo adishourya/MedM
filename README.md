@@ -1,6 +1,6 @@
 ![title](./assets/title.gif)
 
-![mascot](./assets/mascot.png)
+![title](./assets/mascot.png)
 ## Code Navigation
 ![hippo](https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif)
 
