@@ -1,4 +1,5 @@
 ## Code Navigation
+![hippo](https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif)
 
 ./datasets
   * contains prompting technique for data curation
