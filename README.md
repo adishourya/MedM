@@ -1,7 +1,5 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=LightWeight+Radiological+VLM)](https://git.io/typing-svg)
-![title](./assets/mascot.png)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=50&pause=1000&width=435&lines=Adapting+Lightweight+Multimodal+Language+Models;for+Radiological+Visual+Question+Answering+;A+Practical+Approach)](https://git.io/typing-svg)
 ## Code Navigation
-![hippo](https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif)
 
 
 ./datasets
