@@ -1,6 +1,14 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=50&duration=1500&color=57a773&center=true&vCenter=true&multiline=true&width=1335&height=300&lines=Adapting+Lightweight+Multimodal+Model;for+Radiological+Visual+Question+Answering;A+Practical+Approach)](https://git.io/typing-svg)
 
-# Find Our Early Draft at: [![DRAFT](./assets/article_logo.svg)](https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf)
+# Find Early Draft of our articel at: [![DRAFT](./assets/article.png)](https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf)
+
+<p>
+  Find the Early Draft of our article at:
+  <a href="https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf" style="text-decoration: none; color: inherit;">
+    <img src="./assets/article.png" alt="DRAFT" style="vertical-align: middle; height: 16px;">
+    <span style="font-size: 0.8em; margin-left: 4px;">Early Draft</span>
+  </a>
+</p>
 
 ---
 ## Data Availablity
