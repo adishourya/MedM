@@ -4,8 +4,7 @@
 <p>
   Find the Early Draft of our article at:
   <a href="https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf" style="text-decoration: none; color: inherit;">
-    <img src="./assets/article.png" alt="DRAFT" style="vertical-align: middle; height: 16px;">
-    <span style="font-size: 1em; margin-left: 4px;">Early Draft</span>
+    <img src="./assets/article.png" alt="DRAFT" style="vertical-align: middle; height: 48px;">
   </a>
 </p>
 
