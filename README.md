@@ -1,18 +1,17 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=50&duration=1500&color=57a773&center=true&vCenter=true&multiline=true&width=1335&height=300&lines=Adapting+Lightweight+Multimodal+Model;for+Radiological+Visual+Question+Answering;A+Practical+Approach)](https://git.io/typing-svg)
-<p align="center">
-  <img src="./assets/title.png" alt="Title" width="500" height="500">
-</p>
+
+# Find Our Early Draft at: [![DRAFT](./assets/article_logo.svg)](https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf)
+
+---
+## Data Availablity
+You can find the dataset generation prompts in their README.
+
+| Dataset            | Link |
+|--------------------|------|
+| ROCO V2 Train     | [ROCO-QA-Train](https://huggingface.co/datasets/adishourya/ROCO-QA-Train) |
+| ROCO V2 Test/Valid | [ROCO-QA](https://huggingface.co/datasets/adishourya/ROCO-QA) |
+| Medpix Unfiltered | [MEDPIX-ClinQA](https://huggingface.co/datasets/adishourya/MEDPIX-ClinQA) |
 
 ---
 ## Code Navigation
 
-
-./datasets
-  * contains prompting technique for data curation
-
-./experiments
-  * contains second stage finetuning techniques (currently only for Medpix and Roco)
-
-./lvlm-interpret
-  * (submodule) our diagnostic tool
-  * you could run the tool on colab with ./setup_LVLM_INTERPRET.ipynb
