@@ -1,8 +1,9 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=50&duration=1500&color=57a773&center=true&vCenter=true&multiline=true&width=1335&height=300&lines=Adapting+Lightweight+Multimodal+Model;for+Radiological+Visual+Question+Answering;A+Practical+Approach)](https://git.io/typing-svg)
 
-<p style="display: flex; align-items: center; gap: 6px;">
-  Find the Early Draft of our article at:
-  <a href="https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+<p style="display: flex; align-items: center; gap: 10px; min-height: 48px;">
+  <span style="font-size: 1em;">Find the Early Draft of our article at:</span>
+  <a href="https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf" 
+     style="text-decoration: none; color: inherit; display: flex; align-items: center;">
     <img src="./assets/article.png" alt="DRAFT" style="height: 48px;">
   </a>
 </p>
