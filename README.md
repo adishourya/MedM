@@ -17,6 +17,6 @@ You can find the dataset generation prompts in their README.
 ---
 ## Code Navigation
 
-[![Stage1 FineTuning](./assets/Stage1.png)]
+![Stage1 FineTuning](./assets/Stage1.png)
 
-[![Stage2 FineTuning](./assets/Stage2.png)]
+![Stage2 FineTuning](./assets/Stage2.png)
