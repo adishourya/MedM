@@ -1,7 +1,8 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Space+Mono&size=50&duration=1500&color=57a773&center=true&vCenter=true&multiline=true&width=1335&height=300&lines=Adapting+Lightweight+Multimodal+Model;for+Radiological+Visual+Question+Answering;A+Practical+Approach)](https://git.io/typing-svg)
 
 <p>
-<img src="./assets/article.png" alt="DRAFT" style="height: 84px;">
+    <a href="https://github.com/adishourya/medm_article/blob/main/research_internship2024.pdf" target="_blank">
+    <img src="./assets/article.png" alt="DRAFT" style="height: 84px;">
 </p>
 
 ---
@@ -17,6 +18,10 @@ You can find the dataset generation prompts in their README.
 ---
 ## Code Navigation
 
+### First Stage FineTuning
 ![Stage1 FineTuning](./assets/Stage1.png)
+Find the code for performing First stage finetuning here : 
 
+### Second Stage FineTuning
 ![Stage2 FineTuning](./assets/Stage2.png)
+Find the code for performing First stage finetuning here : 
