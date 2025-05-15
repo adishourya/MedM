@@ -14,11 +14,23 @@ we present a sample here
 
 ### First Stage FineTuning
 ![Stage1 FineTuning](./assets/Stage1.png)
-Find the code for performing First stage finetuning here : 
+
 
 ```py
-def foo():
-    pass
+...
+model = PaliGemmaForConditionalGeneration.from_pretrained(
+    model_id,
+    device_map="auto",
+    quantization_config=quantization_config,
+)
+
+# Freeze all parameters besides the projection layer
+for param in model.parameters():
+    param.requires_grad = False
+
+for name, param in model.named_parameters():
+    if name.startswith("multi_modal_projector.linear"):
+        param.requires_grad = True
 ```
 
 
