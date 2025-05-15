@@ -2,12 +2,7 @@
 
 # Data Explorer
 
-<iframe
-  src="https://huggingface.co/datasets/adishourya/MEDPIX-ShortQA/embed/viewer/default/Train"
-  frameborder="0"
-  width="100%"
-  height="560px"
-></iframe>
+
 
 
 ## Code Navigation
