@@ -3,7 +3,8 @@
 # Data Explorer (Sample)
 Please Find the prompts to generate QA Pairs in the submitted article.
 we present a sample here
-<img width="825" alt="image" src="https://github.com/user-attachments/assets/4bd8659b-e982-4be7-8f7a-e2b67330925a" />
+<img width="824" alt="image" src="https://github.com/user-attachments/assets/1c4762f1-c058-42d7-9b9f-5aebc8bcd88f" />
+
 
 
 
